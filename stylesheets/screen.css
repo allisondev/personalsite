@@ -294,7 +294,7 @@ footer p {
   background-repeat: no-repeat;
   background-position: 90% 100%;
 }
-/* line 259, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 #about p {
   margin: 4% 38% 4% 0%;
   padding-right: 0%;
@@ -309,7 +309,7 @@ footer p {
     background-repeat: no-repeat;
     background-position: 50% 20%;
   }
-  /* line 275, ../sass/screen.scss */
+  /* line 274, ../sass/screen.scss */
   #about p {
     margin-right: 0%;
     margin-top: 32%;
@@ -321,12 +321,12 @@ footer p {
   #about {
     background-image: url("../images/profile_small_circle.png");
     background-repeat: no-repeat;
-    background-position: 50% 13%;
+    background-position: 50% 10%;
   }
-  /* line 288, ../sass/screen.scss */
+  /* line 287, ../sass/screen.scss */
   #about p {
     margin-right: 0%;
-    padding-top: 15%;
+    padding-top: 20%;
     padding-right: 5%;
   }
 }

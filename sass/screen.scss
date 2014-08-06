@@ -255,7 +255,6 @@ footer {
 	background-repeat: no-repeat;
 	background-position: 90% 100%;
 
-
 	p {
 		margin: 4% 38% 4% 0%;
 
@@ -283,11 +282,11 @@ footer {
 	@include breakpoint($breakpoint-small-width){
 		background-image: url("../images/profile_small_circle.png");
 		background-repeat: no-repeat;
-		background-position: 50% 13%; 
+		background-position: 50% 10%; 
 
 		p {
 			margin-right: 0%;
-			padding-top: 15%;
+			padding-top: 20%;
 			padding-right: 5%;
 		}
 	}
