@@ -16,6 +16,7 @@ $breakpoint-small-width: max-width 480px;
 $breakpoint-medium-width: max-width 768px;
 $breakpoint-large-width: max-width 1111px;
 
+//placeholder selectors
 %allisonfont {
 	font-family: Satisfy, cursive, Georgia, serif;
 }
@@ -30,6 +31,25 @@ $breakpoint-large-width: max-width 1111px;
 	@include breakpoint($breakpoint-small-width) {
 		font-size: .65em;
 		width: 80%;
+	}
+}
+
+//mixins
+@mixin social-media($icon, $hover) {
+	width: 165px;
+	height: 100px;
+	margin: 0 auto;
+	display: block;
+	background: transparent url($icon) top no-repeat;
+	background-size: 50%;
+
+	&:hover {
+		background-image: url($hover);
+		background-size: 40%;
+	}
+
+	span {
+		display: none;
 	}
 }
 
@@ -221,6 +241,62 @@ div {
 				}
 			}
 		}
+	}
+}
+
+#portfolio {
+	img {
+		padding-right: 5%;
+
+		@include breakpoint($breakpoint-small-width) {
+			width: 300px;
+			height: auto;
+		}
+	}
+}
+
+#contact {
+	.linkedin {
+		@include social-media('../images/linkedin_icon.png', '../images/linkedin_circle.png')
+	}
+
+	.twitter {
+		@include social-media('../images/twitter_icon.png', '../images/twitter_circle.png')
+	}
+
+	.email {
+		@include social-media('../images/email_icon.png', '../images/email_circle.png')
+	}
+
+	ul {
+
+		padding: 0;
+		margin-bottom: 10px;
+		
+		li {
+			display: inline-block;
+			padding: 0;
+			margin: 0;
+
+			span {
+				background: green;
+			}
+
+			@include breakpoint($breakpoint-small-width) {
+				display: block;
+
+				.linkedin, .twitter, .email {
+					background-size: 60%;
+					height: 120px;
+
+					&:hover {
+						background-size: 60%;
+
+					}
+				}
+			}
+		}
+
 	}
 }
 
